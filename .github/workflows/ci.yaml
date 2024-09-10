@@ -11,5 +11,5 @@ jobs:
       - uses: php-actions/composer@v6
       - uses: php-actions/phpunit@v3
         with:
-          php-extensions: gd
+          php-extensions: php8.2-gd
 
