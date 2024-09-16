@@ -9,6 +9,7 @@
       <file>./lib/Data/AbstractData.php</file>
     </exclude>
     <report>
+      <cobertura outputFile="coverage/cobertura-coverage.xml"/>
       <clover outputFile="log/coverage-clover.xml"/>
       <html outputDirectory="log/php-coverage-report" lowUpperBound="50" highLowerBound="80"/>
     </report>
