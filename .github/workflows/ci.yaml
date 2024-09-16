@@ -16,6 +16,7 @@ jobs:
         php_extensions: gd mbstring pcov tokenizer
 
     - uses: irongut/CodeCoverageSummary@v1.3.0
+      id: coverage-summary
       with:
         filename: coverage/cobertura-coverage.xml
     - run: echo ${{ steps.coverage-summary.outputs.summary }} >> $GITHUB_STEP_SUMMARY
