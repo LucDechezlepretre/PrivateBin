@@ -18,3 +18,6 @@ jobs:
     - uses: irongut/CodeCoverageSummary@v1.3.0
       with:
         filename: coverage/cobertura-coverage.xml
+    - run: echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+      env:
+        SUMMARY: ${{ steps.coverage-summary.outputs.summary }}
