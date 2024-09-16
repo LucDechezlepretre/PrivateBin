@@ -3,9 +3,9 @@
   <coverage>
     <include>
       <directory suffix=".php">./lib</directory>
-      <directory suffix=".php">./vendor</directory>
     </include>
     <exclude>
+      <directory suffix=".php">./vendor</directory>
       <file>./lib/Data/AbstractData.php</file>
     </exclude>
     <report>
