@@ -27,6 +27,4 @@ jobs:
         indicators: true
         output: both
         thresholds: '60 80'
-    - run: cat /github/workspace/coverage/cobertura-coverage.xml >> $GITHUB_STEP_SUMMARY
-      env:
-          COVERAGE_SUMMARY: ${{ steps.coverage_summary.outputs.summary }}
+    - run: cat coverage/cobertura-coverage.xml >> $GITHUB_STEP_SUMMARY
