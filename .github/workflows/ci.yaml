@@ -28,3 +28,4 @@ jobs:
         output: both
         thresholds: '60 80'
     - run: cat coverage/cobertura-coverage.xml >> $GITHUB_STEP_SUMMARY
+    - run: cat coverage/cobertura-coverage.xml
