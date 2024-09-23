@@ -28,6 +28,6 @@ jobs:
         indicators: true
         output: both
         thresholds: '60 80'
-    - run: echo "$COVERAGE_SUMMARY" >> $GITHUB_STEP_SUMMARY
+    - run: echo $coverage_summary >> $GITHUB_STEP_SUMMARY
       env:
           COVERAGE_SUMMARY: ${{ steps.coverage_summary.outputs.summary }}
