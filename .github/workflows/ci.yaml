@@ -30,4 +30,4 @@ jobs:
       with:
         php_version: 8.2
         path: lib/
-        standard: 'PSR 1'
+        standard: PSR1
