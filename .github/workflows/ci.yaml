@@ -26,3 +26,8 @@ jobs:
         output: both
         thresholds: '60 80'
     - run: cat code-coverage-results.md >> $GITHUB_STEP_SUMMARY
+    - uses: php-actions/phpcs@v1
+      with:
+        php_version: 8.2
+        path: lib/
+        standard: 'PSR 1'
