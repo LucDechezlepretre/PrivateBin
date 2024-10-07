@@ -260,6 +260,7 @@ class Controller
             }
             $this->_return_message(0, $paste->getId(), array('deletetoken' => $paste->getDeleteToken()));
         }
+	return "";
     }
 
     /**
