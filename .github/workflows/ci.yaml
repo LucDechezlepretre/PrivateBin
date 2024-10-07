@@ -46,13 +46,13 @@ jobs:
       #  path: lib/
     - uses:  SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
+        local-dir: ./
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_MDP }}
-        server-dir: ./www/
+        server-dir: www/
         exclude: |
           **/.git*
           **/.git*/**
-          **vendor/**
-          data/*
+          **/vendor/**
   
