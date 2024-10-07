@@ -44,3 +44,13 @@ jobs:
       with:
         command: analyse
         path: lib/
+    - uses:  SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: 188.165.230.7
+        username: group17
+        password: ${{ secrets.FTP_MDP }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **vendor/**
+  
