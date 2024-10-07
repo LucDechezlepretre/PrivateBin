@@ -46,9 +46,10 @@ jobs:
         path: lib/
     - uses:  SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: 188.165.230.7
-        username: group17
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_MDP }}
+        server-dir: /www/
         exclude: |
           **/.git*
           **/.git*/**
