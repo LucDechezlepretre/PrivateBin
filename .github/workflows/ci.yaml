@@ -44,8 +44,6 @@ jobs:
       with:
         command: analyse
         path: lib/
-    - run: ls -al .
-    - run: rm -r data/
     - uses:  SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         local-dir: ./
@@ -57,4 +55,5 @@ jobs:
           **/.git*
           **/.git*/**
           **/vendor/**
+          data
   
