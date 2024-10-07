@@ -196,7 +196,7 @@ class Controller
      * @access private
      * @return string
      */
-    private function _create():string
+    private function _create()
     {
         // Ensure last paste from visitors IP address was more than configured amount of seconds ago.
         ServerSalt::setStore($this->_model->getStore());
