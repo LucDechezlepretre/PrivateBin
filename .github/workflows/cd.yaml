@@ -8,6 +8,7 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           local-dir: ./
